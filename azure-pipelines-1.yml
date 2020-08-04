@@ -17,5 +17,6 @@ steps:
     echo Add other tasks to build, test, and deploy your project.
     echo See https://aka.ms/yaml
   displayName: 'Run a multi-line script'
-- script: curl -u juan.herrera:oeu6barzlj46eucu5uqbrqp7odxgomiwpjn4x2hcvfrwus2u3beq -X POST -H "Content-Type: application/json" https://dev.azure.com/juanherrera0969/Test1/_apis/pipelines/1/runs?api-version=6.0-preview.1 -d '{"PreviewRun": true}'
-  displayName: 'Preview Run'
+
+- script: curl -u juan.herrera:oeu6barzlj46eucu5uqbrqp7odxgomiwpjn4x2hcvfrwus2u3beq https://dev.azure.com/juanherrera0969/_apis/projects?api-version=2.0
+  displayName: 'curl'
